@@ -161,13 +161,26 @@ li{
     margin-left: 50px;
  }
 
- .mail{
+.auth-nav .mail::before {
+    display: inline-block;
+    content: "";
     width: 16px;
     height: 12px;
-    padding-left: 30px;
-    background-image: url("../css/image/envelope.svg");
+    background-image: url("../images/iconimag/icon-envelope.svg");
     background-size: contain;
-    background-repeat: no-repeat;
+    margin-right: 10px;
+ }
+
+ .auth-nav .tel::before {
+     display: inline-block;
+     content: "";
+     width: 10px;
+     height: 16px;
+     background-image: url("../images/iconimag/icon-vector.svg");
+     background-size: contain;
+     margin-right: 10px;
+     background-repeat: no-repeat;
+     background-position: center;
  }
 
  
@@ -288,7 +301,7 @@ li{
     margin: 0 auto;
     padding: 0 15px;
 }
-.sectit .tito+.tito {
+.sectit .tito{
     margin-right: 30px;
 }
 
@@ -303,6 +316,34 @@ li{
 .tito p{
     width: 270px;
 }
+
+
+.tito::before{
+    display: block;
+    content: "";
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--primary-grey-color);
+    margin-bottom: 30px;
+
+}
+
+.tito:nth-child(1)::before{
+    background-image: url("../images/iconimag/icon-uvagadodetel.svg");
+}
+.tito:nth-child(2)::before {
+    background-image: url("../images/iconimag/icon-punktyaln.svg");
+}
+
+.tito:nth-child(3)::before {
+    background-image: url("../images/iconimag/icon-planyvan.svg");
+}
+.tito:nth-child(4)::before {
+    background-image: url("../images/iconimag/icon-sychasni.svg");
+}
+
+
 /* Feature */
 .feature{
     padding-bottom: 94px;
