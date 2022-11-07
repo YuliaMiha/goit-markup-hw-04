@@ -617,7 +617,7 @@ li{
     gap: 70px;
     align-items: baseline;
 }
-.footer-first {
+.footer-box {
     display: flex;
     flex-direction: column;
 }
@@ -638,11 +638,12 @@ li{
 
 }
 
-/* .footer-link .footer-iter{
+.footer-link .footer-iter{
     fill: var(--primary-white-color);
-} */
+}
 
 .footer-item{
+    color: var(--primary-white-color);
     display: flex;
     justify-content: center;
    align-items: center;
