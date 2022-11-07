@@ -497,7 +497,8 @@ li{
     background-color: var(--accent-color);
 }
 
-.team-icon:hover{
+.team-icon:hover,
+.team-icon:focus{
     fill: var(--primary-white-color);
 }
 
@@ -528,10 +529,10 @@ li{
     column-gap: 30px;
 }
 
-.clients-item {
+.clients-link {
     display: flex;
     list-style: none;
-    fill: var(--client-icon-color);
+    fill: #AFB1B8;
     width: 170px;
     height: 92px;
     align-items: center;
@@ -548,15 +549,16 @@ li{
 
 .client-icon {
     fill: currentColor;
+    padding: 7px;
 }
 
-.clients-item:hover,
-.clients-item:focus {
+.clients-link:hover,
+.clients-link:focus {
     border-color: var(--accent-color);
 }
 
-.clients-item:hover .client-icon,
-.clients-item:focus .client-icon {
+.clients-link:hover .client-icon,
+.clients-link:focus .client-icon {
     fill: var(--accent-color);
 }
 /* Footer */
@@ -636,9 +638,9 @@ li{
 
 }
 
-.footer-link .footer-iter{
+/* .footer-link .footer-iter{
     fill: var(--primary-white-color);
-}
+} */
 
 .footer-item{
     display: flex;
@@ -648,18 +650,19 @@ li{
     height: 44px;
     border-radius: 50%;
     text-decoration: none;
-    background-color: var(--primary-text-color);
+    background-color: rgba(255, 255, 255, 0.1);
     margin-bottom: 20px;
 
 }
 
 .footer-link {
     display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
 
 }
 
-.footer-item:hover,
-.footer-item:focus {
+.team-icon-link.footer-link:hover,
+.team-icon-link.footer-link:focus {
     background-color: var(--accent-color);
 }
 
