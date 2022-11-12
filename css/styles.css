@@ -617,7 +617,7 @@ li{
     gap: 70px;
     align-items: baseline;
 }
-.footer-box {
+.footer-first {
     display: flex;
     flex-direction: column;
 }
